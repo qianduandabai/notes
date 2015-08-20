@@ -23,3 +23,27 @@ function previousPage(){
 	a.style.backgroundImage = "url("+arr[cursor]+")"
 
 }
+
+function signup(){
+	var a = document.getElementById("sighUp")
+	a.style.backgroundColor = "#fff";
+
+}
+
+
+function dorequest(url,data,callback){
+	var request = new XMLHttpRequest();
+	request.open("GET",url);
+	request.onreadystatechange = function(){
+		if (request.readyState ==4 && request.status ==200) {
+			callback(request.responseText)
+		}
+	}
+	request.send(data)
+}
+
+function login(){
+	dorequest("/login","name=aben&password=aben",function(data){
+		console.log(data);
+	})
+}
