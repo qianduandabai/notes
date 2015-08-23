@@ -6,11 +6,7 @@ function nextPage(){
 	if (cursor >= arr.length) {
 		cursor = 0;
 	};
-	
-	
 	a.style.backgroundImage = "url("+arr[cursor]+")"
-
-
 }
 function previousPage(){
 	var a = document.getElementById('body')
@@ -18,16 +14,7 @@ function previousPage(){
 	if (cursor < 0) {
 		cursor = arr.length-1;
 	};
-	
-	
 	a.style.backgroundImage = "url("+arr[cursor]+")"
-
-}
-
-function signup(){
-	var a = document.getElementById("sighUp")
-	a.style.backgroundColor = "#fff";
-
 }
 
 
@@ -43,7 +30,18 @@ function dorequest(url,data,callback){
 }
 
 function login(){
-	dorequest("/login","name=aben&password=aben",function(data){
-		console.log(data);
-	})
+	var a = document.getElementById("email").value
+	var b = document.getElementById("pwd").value
+	
+	var url = "/services/login?name="+a+"&password="+b;
+
+        dorequest(url,"",function(data){
+        data = JSON.parse(data)
+                console.log(data.result)
+        if(data.result == 'success'){
+
+            location.href = '/html/bendian.html'
+    }
+        })
+
 }
