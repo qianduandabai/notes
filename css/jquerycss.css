@@ -1,0 +1,35 @@
+.fade{
+    margin-bottom: 0px;
+}
+#inputani{
+    margin-top: 100px;
+}
+.slide{
+    background-color: pink;
+    margin-top: 100px;
+    padding: 10px;
+}
+.htmlprac{
+    color: red;
+}
+/*907jq.html的css*/
+.important{
+font-weight:bold;
+font-size:xx-large;
+}
+
+.blue{
+color:blue;
+}
+.shanchu1{
+    color: red;
+}
+#sizetest{
+    height:100px;width:300px;padding:10px;margin:3px;border:1px solid blue;background-color:lightblue;
+}
+#jiazai,#jiazai2,#jiazai3{
+    border: 1px solid green;
+    width: 400px;
+    height: 400px;
+    background-color: #0e9;
+}

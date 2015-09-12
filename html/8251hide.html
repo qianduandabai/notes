@@ -1,0 +1,131 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN"
+"http://www.w3.org/TR/html4/frameset.dtd">
+<html>
+<head>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../js/jquerylianxi.js"></script>
+	<link type="text/css" rel="stylesheet"href="../css/jquerycss.css"></link>
+	<script type="text/javascript">
+		/*$(document).ready(function(){
+		$("button").click(function(){
+		$("p").hide();
+		});
+		});*/
+		/*$(document).ready(function(){
+		$("input").click(function(){
+		$(this).hide();
+		});
+		});*隐藏当前HTml/*/
+
+		/*$(document).ready(function(){
+		$("input").click(function(){
+		$("#p1").hide();
+		});
+		});*/
+		/*$(document).ready(function(){
+		$("input").click(function(){
+		$(".p2").hide();
+		});
+		});*/
+	</script>
+</head>
+<body>
+<p id="p1">Click here I will hide</p>
+<p class="p2">double click, I will hide</p>
+<p class="p2">Click here,will I hide?</p>
+
+<!-- <input type="button" value="Click me"/> -->
+<button type="button">Click me</button>
+<input id="focus" type="text"/>
+<p>李白
+演唱：李荣浩
+</p>
+<p class="showorhide">
+大部分人要我学习去看 世俗的眼光
+我认真学习了世俗眼光 世俗到天亮
+一部外国电影没听懂一句话
+看完结局才是笑话
+你看我多乖多聪明多么听话 多奸诈
+喝了几大碗米酒再离开是为了模仿
+一出门不小心吐的那幅是谁的书
+你一天一口一个 亲爱的对方
+多么不流行的模样
+</p>
+<p class="showorhide">
+都应该练练书法再出门闯荡
+才会有人热情买帐
+要是能重来 我要选李白
+几百年前做的好坏 没那么多人猜
+要是能重来 我要选李白
+至少我还能写写诗来澎湃 逗逗女孩
+要是能重来 我要选李白
+创作也能到那么高端 被那么多人崇拜
+要是能重来
+</p>
+<div>
+<input id="hide" type="button" value="隐藏歌词"/>
+<input id="show" type="button" value="显示歌词"/>
+<input id="change" type="button" value="显示或隐藏歌词"/>
+</div>
+
+<!--fade-->
+<div>
+<input id="fadein" type="button" value="淡入"/>
+<input id="fadeout" type="button" value="淡出"/>
+<input id="fadetoggle" type="button" value="淡入淡出"/>
+<input id="fadeto" type="button" value="透明度淡出"/>
+</div>
+
+<div class="fade" id="div1" style="width:100px;height:100px;background-color:red;float:left"></div>
+<div class="fade" id="div2" style="width:100px;height:100px;background-color:yellow;float:left"></div>
+<div class="fade" id="div3" style="width:100px;height:100px;background-color:blue;float:left;"></div>
+<br/>
+<!--自定义动画  -->
+<div id="animate1" style="width:100px;height:100px;background-color:green;position:absolute;margin-top:100px;">
+字体
+</div>
+<div>
+	<input id="inputani" type="button" value="自定义动画"/>
+</div>
+<div class="slide">
+	<p>Take Me to Your Heart
+演唱：Michael Learns To Rock
+Hiding from the rain and snow Trying to forget but I won't let go Looking at a crowded street Listening to my own heart beat
+So many people All around the world Tell me where do I find，Someone like you girlTake me to your heartTake me to your soul
+Give me your hand before I'm oldShow me what love isHaven't got a clueShow me that wonders can be trueThey say nothing lasts forever
+We are only here todayLove's now or neverBring me far awayTake me to your heartTake me to your soulGive me your hand and hold me
+Show me what loveIs be my guiding starIt is easyTake me to your heart
+	</p>
+</div>
+<div>
+	<input id="slidetoggle" type="button" value="隐藏/显示面板"/>
+</div>
+<div>
+	<input id="stopslide" type="button" value="停止面板滑动"/>
+</div>
+<!-- ＤＯＭ练习 -->
+<p id="domtext">Click here I will hide</p>
+<p class="htmlprac2">double click, I will hide</p>
+<p class="htmlprac" title="practice">Click here,will <br>I</br> hide?</p>
+<div>
+	<input id="showtext" type="button" value="返回文本"/>
+</div>
+<div>
+	<input id="showhtml" type="button" value="显示ＨＴＭＬ"/>
+	<input id="showcolor" type="button" value="显示颜色"/>
+</div>
+<!-- 设置内容-->
+<div>
+	<input id="btn1" type="button" value="设置文本"/>
+	<input id="btn2" type="button" value="设置html"/>
+	<input id="btn3" type="button" value="设置值"/>
+</div>
+<p id="btn1p">设置文本</p>
+<p id="btn2p">设置html</p>
+<input type="text" id="btn3input" placeholder="请输入文本"></input>
+<p class="testtext">旧的1</p>
+<p class="testtext">旧的2</p>
+<input type='button' id="testtextbtn" value="testtextbtn"/>
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN"
+"http://www.w3.org/TR/html4/frameset.dtd">
+<html>
+<head>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../js/jquerylianxi2.js"></script>
+	<link type="text/css" rel="stylesheet"href="../css/jquerycss.css"></link>
+	<meta charset="utf-8" http-equiv="content-type"/>
+</head>
+<body>
+<p id="test1">
+	这是一个用来做demo的段落
+</p>
+<p id="test2">
+	这是一个用来做demo的另一个段落
+</p>
+<input id="shurutext1" type="text" placeholder="请输入文本"/>
+<br>
+<input id="test1Btn" type="button" value="test1"/>
+<input id="test2Btn" type="button" value="test2"/>
+<input id="shurutestBtn" type="button" value="输入框案例测试"/>
+<input class="testAttr" type="button" value="AttrTest"/>
+<input id="zhuijia" type="button" value="追加段落"/>
+<input id="qianzhuijia" type="button" value="前追加段落"/>
+<input id="houbian" type="button" value="After"/>
+<input id="qianbian" type="button" value="Before"/>
+<input id="zhijietianjia" type="button" value="直接追加文本" onclick="appendText()"/>
+<input id="houbiantianjia" type="button" value="添加新元素" onclick="afterText()"/>
+<hr>
+<!-- 删除元素 -->
+<input id="shanchu" type="button" value="删除元素"/>
+<input id="shanchu2" type="button" value="删除元素2"/>
+<input id="shanchu3" type="button" value="删除元素3"/>
+<p id="shanchutest"class=shanchu1>删除元素测试</p>
+<div id="sccs">
+	<p class='shanchu1'>删除元素测试2</p>
+	<p class='shanchu1'>删除元素测试3</p>
+	<p class='shanchu1'>删除元素测试4</p>
+	<p class='shanchu1' id="shanchu5">删除元素测试5</p>
+	<p class='shanchu2'>删除元素测试54</p>
+	<p class='shanchu3'>删除元素测试6</p>
+</div>
+<br/>
+<!-- 添加类 -->
+<input id="tianjialei" type="button" value="添加类"/>
+<input id="shanchulei" type="button" value="删除类"/>
+<input id="qiehuan" type="button" value="切换类"/>
+<!-- css -->
+<input id="fanhui" type="button" value="返回css"/>
+<input id="shezhiCss" type="button" value="设置css"/>
+<!-- 尺寸 -->
+<hr/>
+<input id="showSize" type="button" value="显示尺寸"/>
+<hr/>
+<input id="chuangkousize" type="button" value="窗口尺寸"/>
+<input id="tiaozhengsize" type="button" value="调整尺寸"/>
+<div id="sizetest">
+</div>
+<!-- 遍历练习 -->
+<hr>
+<input id="bianlitest" type="button" value="直接祖先"/>
+<input id="zuxianbtn" type="button" value="返回祖先"/>
+<input id="canshubtn" type="button" value="参数祖先"/>
+<input id="canshubtn2" type="button" value="参数之间祖先"/>
+<input id="zileibtn1" type="button" value="直接子类"/>
+<input id="zileibtn2" type="button" value="特定子类"/>
+<input id="zileibtn3" type="button" value="特定子类"/>
+<input id="tongbaobtn1" type="button" value="所有同胞"/>
+<input id="tongbaobtn2" type="button" value="下一个同胞"/>
+<input id="tongbaobtn3" type="button" value="后边的所有同胞"/>
+<input id="tongbaobtn4" type="button" value="之间的所有同胞"/>
+
+
+
+
+
+<!-- 祖先 -->
+<div id="zuxian">
+	<ul id="zuxian2">
+		<li class="zilei" id="test">这是第一个</li>
+		<li class="zilei2">这是第二个</li>
+		<li class="zilei" id="canshutest2">这是第三个</li>
+		<li class="zilei">这是第三个</li>
+		<p>ghghk</p>
+		<li class="zilei">这是第三个</li>
+		<p>ghghk</p>
+		<li class="zilei">这是第三个</li>
+	</ul>
+	<ul id="zuxian3">
+		<li class="zilei" id="zuxiantest">这是第一个</li>
+		<li class="zilei2" id="canshutest">这是第二个</li>
+		<li class="zilei">这是第三个</li>
+	</ul>
+
+<input id="guolvbtn" type="button" value="首个元素案例"/>
+<input id="guolvbtn2" type="button" value="末尾元素案例"/>
+<input id="guolvbtn3" type="button" value="特定元素案例"/>
+<input id="guolvbtn4" type="button" value="过滤元素案例"/>
+<input id="guolvbtn5" type="button" value="筛选不匹配元素案例"/>
+<hr/>
+<!--Ajax加载练习  -->
+<input id="jiazaibtn" type="button" value="回到主页"/>
+<div id="jiazai">
+
+</div>
+<hr/>
+<input id="gettest" type="button" value="Get"/>
+<div id="jiazai2">
+
+</div>
+<input id="posttest" type="button" value="Post"/>
+<div id="jiazai3">
+
+</div>
+
+
+
+
+</div>
+
+</body>
+</html>

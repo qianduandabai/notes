@@ -2,7 +2,7 @@ body{
 	background: url(../images/1.jpg);
 	width:100%;
 	background-repeat: no-repeat;
-	border: 0px solid red;	
+	border: 0px solid red;
 	margin: 0px;
 	background-position:50% 50%;
 	background-size:100% 100%;
@@ -45,7 +45,7 @@ a{
 	margin: 0 auto;
 	border: 0px red solid;
 	margin-top: 60px;
-	
+
 
 }
 .nav{
@@ -67,6 +67,7 @@ a{
 }
 #signUp:hover{
 	color:rgb(255, 255, 255);
+
 }
 
 #logIn{
@@ -79,7 +80,7 @@ a{
 .list{
 	border:0px red solid;
 	background-color: #fff;
-	width: 584px;
+	width: 575px;
 	height: 214px;
 }
 #list_1{
@@ -158,11 +159,10 @@ ul{
 }
 #previousBtn{
 	height: 100px;
-	
+
 
 }
 #nextBtn{
 	height: 100px;
-	
-}
 
+}
