@@ -1,6 +1,6 @@
 
 //轮播
-var arr = ["./images/1.jpg","./images/2.jpg","./images/3.jpg","./images/4.jpg","./images/5.jpg","./images/6.jpg","./images/7.jpg"]
+var arr = ["./images/1.jpg","./images/2.jpg","./images/3.jpg","./images/4.jpg"]
 var cursor = 0;
 // function nextPage(){
 // 	var a = document.getElementById('body')
@@ -36,7 +36,17 @@ $(document).ready(function(){
 		};
 		$('#body').css('backgroundImage',"url("+arr[cursor]+")");
 	})
+	//换种方式轮播
+	$(".l2").click(function(){
+		$("#lunbo2").animate({
+			right: 0,
+    	width: "toggle"
+	}, 6000, function() {
+    // Animation complete.
+  });
+	})
 })
+
 
 function dorequest(url,data,callback){
 	var request = new XMLHttpRequest();

@@ -6,12 +6,24 @@ body{
 	margin: 0px;
 	background-position:50% 50%;
 	background-size:100% 100%;
+	position: relative;
+}
+.beijing{
+	position: absolute;
+	width: 100%;
+	top:0px;
+	display: none;
+	background-size: 100% 100%;
+	z-index: -1;
+}
+ol{
+	list-style-type: none;
 }
 #logo{
 	width: 425px;
 	margin: 0 auto;
 	border: 0px yellow solid;
-	margin-top: 80px;
+	padding-top: 80px;
 	position: relative;
 
 }
@@ -158,14 +170,13 @@ ul{
 	right: 0px;
 }
 #previousBtn{
-	height: 100px;
-
-
+	text-align: right;
+	margin-top: 65px;
 }
 #nextBtn{
-	height: 100px;
-
-}
+	text-align: right;
+	margin-top: 10px;
+	}
 #cnzz_stat_icon_1256322924{
 	display: block;
 	width:100%;
