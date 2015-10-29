@@ -19,13 +19,28 @@ $("#showLogin").click(function(){
 
 });	
 var i=0;
-var time=0;
+var time=setInterval("auto()",3000);
+$("#adCtrl ul li").hover(function(){
+	clearInterval(time);
+	i=$(this).index();
+	$(this).siblings().html("<img src='images/bd2.png'/>");
+	$("#adshow ul li").eq(i).fadeIn(1000).siblings().fadeOut();
+	$(this).html("<img src='images/bd3.png'/>");	
+},function(){
+	time=setInterval("auto()",3000);
+});
+
+
 function auto(){
 			i++;
 			if(i>3){
 				i=0;
 			}
-			$("#adshow ul li").eq(i).fadeIn(100).siblings().fadeOut();			
+			$("#adshow ul li").eq(i).fadeIn(1000).siblings().fadeOut();	
+			$("#adCtrl ul li").html("<img src='images/bd3.png'/>");
+			$("#adCtrl ul li").eq(i).siblings().html("<img src='images/bd2.png'/>");		
 		}
-		time=setInterval("auto()",3000);
-		
+$("#top ul li").click(function(){
+	$(this).css("background-color","#00a67c");
+	$("#top ul li").eq(i).siblings().css("background-color","#000");
+})
